@@ -13,7 +13,7 @@ class ContactsController < ApplicationController
      redirect_to new_contact_path
   end
  end
-
+ 
 private
   def contact_params
      params.require(:contact).permit(:name, :email, :comments)
